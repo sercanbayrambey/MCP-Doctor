@@ -1,0 +1,13 @@
+{
+  "toolName": "example_tool",
+  "description": "Example tool test case with exact matching",
+  "priority": 10,
+  "request": {
+    "param1": "test_value",
+    "param2": "${PRODUCT_ID}"
+  },
+  "expectedResponse": {
+    "success": true,
+    "data": "expected_result"
+  }
+}

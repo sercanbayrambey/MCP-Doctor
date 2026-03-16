@@ -1,0 +1,41 @@
+{
+  "toolName": "example_with_matchers",
+  "description": "Example showing advanced matchers with regex support",
+  "priority": 20,
+  "request": {
+    "query": "test"
+  },
+  "matchers": [
+    {
+      "type": "regex",
+      "pattern": "success|completed",
+      "flags": "i",
+      "_comment": "No path = searches entire response as JSON string"
+    },
+    {
+      "type": "contains",
+      "value": "success",
+      "_comment": "Check if 'success' appears anywhere in the response"
+    },
+    {
+      "type": "exists",
+      "path": "data"
+    },
+    {
+      "type": "regex",
+      "path": "data.id",
+      "pattern": "^[a-f0-9-]{36}$",
+      "flags": "i"
+    },
+    {
+      "type": "exact",
+      "path": "status",
+      "value": "success"
+    },
+    {
+      "type": "type",
+      "path": "data.items",
+      "value": "array"
+    }
+  ]
+}

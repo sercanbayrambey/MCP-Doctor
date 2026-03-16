@@ -1,0 +1,24 @@
+{
+  "name": "mcp-doctor",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node src/index.js --test"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "testing",
+    "validation",
+    "health-check",
+    "tools"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "Automated testing and validation framework for MCP server tools",
+  "dependencies": {
+    "dotenv": "^17.3.1"
+  }
+}
