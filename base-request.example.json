@@ -1,0 +1,14 @@
+{
+  "headers": {
+    "Content-Type": "application/json",
+    "X-Custom-Header": "your-value"
+  },
+  "auth": {
+    "type": "bearer",
+    "token": "your-token-here"
+  },
+  "queryParams": {
+    "version": "v1"
+  },
+  "timeout": 5000
+}

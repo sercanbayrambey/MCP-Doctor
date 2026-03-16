@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "auth": {
+    "type": "oauth"
+  },
+  "oauth": {
+    "tokenUrl": "https://auth.example.com/oauth/token",
+    "clientId": "your-client-id",
+    "clientSecret": "your-client-secret",
+    "grantType": "client_credentials",
+    "scope": "read write"
+  },
+  "queryParams": {},
+  "timeout": 30000
+}
